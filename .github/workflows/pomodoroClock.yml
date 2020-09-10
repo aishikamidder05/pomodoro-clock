@@ -23,7 +23,7 @@ jobs:
       
       - name: Send Alert
         run: |
-            python sendAlert.py
+            python pomodoroclock.py
         env:
           IS_ACTIVATED: ${{ secrets.IS_ACTIVATED }} # 1 for activated and 0 for deactivated
           SSID: ${{ secrets.SSID }}
