@@ -1,8 +1,8 @@
-name: SendAlert
+name: ClockAlert
 
 on:
   schedule:
-    - cron:  '*/5 * * * *'
+    - cron:  '*/45 * * * *'
   workflow_dispatch:
 
 jobs:
