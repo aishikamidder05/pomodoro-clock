@@ -10,12 +10,12 @@ def send_simple_message():
 		data={"from": "User Name <mailgun@{}>".format(os.environ['MAILGUN_URL']),
 			"to": [os.environ['RECIPIENT_EMAIL']],
 			"subject": "ALERT",
-			"text": "Testing Mailgun!"})
+			"text": "STOP! 45 mins is over. Go take a break!!"})
 
 if(os.environ['IS_ACTIVATED']=='1'):
     response=send_simple_message()
     print("Response EMAIL",response)
 
     sms = Sms(os.environ['SSID'], os.environ['AUTH_TOKEN'], os.environ['TO_NUMBER'], os.environ['FROM_NUMBER'])
-    response = sms.send_sms("Testing")
+    response = sms.send_sms("STOP! 45 mins is over! Take a chill pill ")
     print("Response SMS",response)
