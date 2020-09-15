@@ -21,10 +21,10 @@ if(os.environ['IS_ACTIVATED']=='1'):
     response = sms.send_sms(message)
     print("Response SMS",response)
 
-	time.sleep(900)
+    time.sleep(900)
 
-	message="Time's up, now get back to work!"
-	response=send_simple_message(message)
+    message="Time's up, now get back to work!"
+    response=send_simple_message(message)
     print("Response EMAIL",response)
 
     sms = Sms(os.environ['SSID'], os.environ['AUTH_TOKEN'], os.environ['TO_NUMBER'], os.environ['FROM_NUMBER'])
