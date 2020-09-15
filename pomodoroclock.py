@@ -13,7 +13,7 @@ def send_simple_message(message):
 			"text": message})
 
 if(os.environ['IS_ACTIVATED']=='1'):
-	message="STOP! 45 mins is over. Go take a break!!"
+    message="STOP! 45 mins is over. Go take a break!!"
     response=send_simple_message(message)
     print("Response EMAIL",response)
 
