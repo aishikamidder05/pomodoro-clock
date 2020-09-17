@@ -1,6 +1,6 @@
 # pomodoro-clock
 
-This site was built as a part of Github Actions Hackathon [My DEV post here](https://dev.to/aishikamidder05/build-a-pomodoro-clock-using-github-actions-3fme)
+This project was built as a part of Github Actions Hackathon [My DEV post here](https://dev.to/aishikamidder05/build-a-pomodoro-clock-using-github-actions-3fme)
 
 ## To use it for yourself
 
