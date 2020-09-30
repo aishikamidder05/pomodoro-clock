@@ -1,6 +1,6 @@
 import os, time, requests
 from boltiot import Sms
-
+from decouple import config
 # later use time to avoid alerts at times you are busy
 
 def send_simple_message(message):
@@ -12,12 +12,12 @@ def send_simple_message(message):
 			"subject": "ALERT",
 			"text": message})
 
-if(os.environ['IS_ACTIVATED']=='1'):
+if(config['IS_ACTIVATED']=='1'):
     message="STOP! 45 mins is over. Go take a break!!"
     response=send_simple_message(message)
     print("Response EMAIL",response)
 
-    sms = Sms(os.environ['SSID'], os.environ['AUTH_TOKEN'], os.environ['TO_NUMBER'], os.environ['FROM_NUMBER'])
+    sms = Sms(config['SSID'], config['AUTH_TOKEN'], config['TO_NUMBER'], config['FROM_NUMBER'])
     response = sms.send_sms(message)
     print("Response SMS",response)
 
@@ -27,7 +27,8 @@ if(os.environ['IS_ACTIVATED']=='1'):
     response=send_simple_message(message)
     print("Response EMAIL",response)
 
-    sms = Sms(os.environ['SSID'], os.environ['AUTH_TOKEN'], os.environ['TO_NUMBER'], os.environ['FROM_NUMBER'])
+    sms = Sms(config['SSID'], config['AUTH_TOKEN'], config
+	      ['TO_NUMBER'], config['FROM_NUMBER'])
     response = sms.send_sms(message)
     print("Response SMS",response)
 
