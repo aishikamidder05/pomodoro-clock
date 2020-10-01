@@ -1,5 +1,5 @@
 # pomodoro-clock
-## This project was built as a part of Github Actions Hackathon [Medium](https://dev.to/aishikamidder05/build-a-pomodoro-clock-using-github-actions-3fme)
+## This project was built as a part of Github Actions Hackathon [My DEV Post here](https://dev.to/aishikamidder05/build-a-pomodoro-clock-using-github-actions-3fme)
 
 ### To use it for yourself
 Setup an account in Twilio and Mailgun</br>
