@@ -11,3 +11,4 @@ Set the secret variable IS_ACTIVATED to 0 to stop receiving any alerts and set i
 ## After this hackathon ended, I have made this open for hacktoberfest especially for beginners. 
  #### Make sure to make valid pull requests for hacktoberfest or else your PR would be declared invalid. 
  #### I will merge your contributions if they are useful.
+aishika ke kalabo
